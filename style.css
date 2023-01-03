@@ -224,7 +224,27 @@ form button{
     border-radius: 30px;
 
 }
+#Res{
+    width: 100%;
+}
+#Res button a{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+#Res button{
+     margin-top: 1rem;
+     height: 5rem;
+     background-color: #7e73f2;
+     width: 40%;
+     font-size: 25px;
+     border: transparent;
+     box-shadow: 4px 4px lightskyblue;
+}
 
+#Res button:hover{
+    background-image: linear-gradient(orange, white,green);
+}
 @keyframes fas
 {
     0%{
