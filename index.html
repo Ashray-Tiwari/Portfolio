@@ -13,21 +13,26 @@
       @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
       @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@300&display=swap');
     </style>
-       <script src="script.js"></script>
+       <!-- <script src="script.js"></script> -->
     <title>Ashray Tiwari</title>
   </head>
   <body>
-    <nav style="z-index: 2;">
-      <ul>
-        <li ><a href="#ABOUT" >About me</a></li>
-        <!-- <li><a href="#">Experience</a></li> -->
-        <li><a href="#Edu">Education</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Achievements</a></li>
-        <li><a href="#Con">Contact Info</a></li>
-        <li><a href="#Res">View Resume</a></li>
+    <nav class="navbar">
+      <div class="navbar-burger">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div>
+      <ul class="navbar-links">
+          <li ><a href="#ABOUT" >About me</a></li>
+          <!-- <li><a href="#">Experience</a></li> -->
+          <li><a href="#Edu">Education</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Achievements</a></li>
+          <li><a href="#Con">Contact Info</a></li>
+          <li><a href="#Res">Resume</a></li>
       </ul>
-    </nav>
+    </nav>  
 
     <div class="content" >
       <div class="writing">
@@ -50,7 +55,6 @@
         <p style="cursor: pointer;" onClick="document.querySelector('#ABOUT').scrollIntoView({behavior:'smooth'});">CLICK TO SCROLL DOWN</p>
       </div>
       </div>
-      <br><br>
       <div class="down-arrow" style="cursor: pointer;"  onClick="document.querySelector('#ABOUT').scrollIntoView({behavior:'smooth'});" >
         <i
           class="fas fa-chevron-down"
@@ -161,9 +165,7 @@
           </div>
         </div>
       </div>
-
-      <div class="Proj"></div>
-
+      
       <div class="Achi"></div>
 
       <div id="Con">
@@ -228,28 +230,10 @@
         <p>
           <b style="border-bottom: solid black; font-size: 2rem">RESUME SECTION</b>
         </p>
-        <button><a href="https://drive.google.com/uc?export=download&id=1bO-QWZyDMIMSNfcNOOydNjl1Ewue17Md" target="_blank">Download Resume</a></button>
+        <button><a href="https://drive.google.com/file/d/1D14F4ACTFNnQPY0pWJcdva3LG7Xtd20x/view?usp=sharing" target="_blank">View Resume</a></button>
       </div>
     </div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script >
-      function sendEmail(){
-        Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "ashraytiwari519@gmail.com",
-    Password : "B4E676E6F93F22103223B7158F3E27B6D61D",
-    To : "ashraytiwari519@gmail.com",
-    From : document.getElementById("email").value,
-    Subject : "This is the subject",
-    Body : "Name: " + document.getElementById("name").value 
-    + "<br> Email: "+document.getElementById("email").value
-    + "<br> Phone no: "+document.getElementById("phone").value
-    + "<br> Message: "+document.getElementById("message").value
-
-}).then(
-  message => alert("Message sent successfully")
-);
-      }
-    </script>
+    <script src="script.js"></script> 
   </body>
 </html>
